@@ -224,7 +224,7 @@ namespace MonoGame.Shapes
         /// <param name="layerDepth">The depth of the layer of this shape</param>
         public static void DrawLine(this SpriteBatch spriteBatch, Vector2 point, float length, float angle, Color color, float thickness = 1f, int layerDepth = 0)
         {
-            var origin = new Vector2(0f, 0.0f);
+            var origin = new Vector2(0f, 0.5f);
             var scale = new Vector2(length, thickness);
             spriteBatch.Draw(GetOrCreateTexture(spriteBatch), point, PixelSourceRectangle, color, angle, origin, scale, SpriteEffects.None, layerDepth);
         }
