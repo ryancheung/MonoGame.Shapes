@@ -1,5 +1,3 @@
-//#tool nuget:?package=vswhere&version=2.6.7
-
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
 //////////////////////////////////////////////////////////////////////
@@ -20,26 +18,6 @@ private void PackProject(string filePath)
 {
     MSBuild(filePath, msPackSettings);
 }
-
-//private bool GetMSBuildWith(string requires)
-//{
-//    if (IsRunningOnWindows())
-//    {
-//        DirectoryPath vsLatest = VSWhereLatest(new VSWhereLatestSettings { Requires = requires });
-//
-//        if (vsLatest != null)
-//        {
-//            var files = GetFiles(vsLatest.FullPath + "/**/MSBuild.exe");
-//            if (files.Any())
-//            {
-//                msPackSettings.ToolPath = files.First();
-//                return true;
-//            }
-//        }
-//    }
-//
-//    return false;
-//}
 
 //////////////////////////////////////////////////////////////////////
 // TASKS
