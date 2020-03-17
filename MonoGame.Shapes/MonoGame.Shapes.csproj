@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Shapes extension for MonoGame SpriteBatch.</Description>
+    <PackageTags>monogame;.net core;core;.netstandard2.0;</PackageTags>
+    <PackageId>MonoGame.Shapes</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

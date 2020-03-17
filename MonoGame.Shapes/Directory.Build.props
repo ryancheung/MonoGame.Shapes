@@ -1,0 +1,15 @@
+<Project>
+
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>obj</BaseIntermediateOutputPath>
+    <BaseOutputPath>..\Artifacts\MonoGame.Shapes</BaseOutputPath>
+    <AssemblyName>MonoGame.Shapes</AssemblyName>
+    <RootNamespace>MonoGame.Shapes</RootNamespace>
+    <PackageProjectUrl>https://github.com/ryancheung/MonoGame.Shapes</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ryancheung/MonoGame.Shapes</RepositoryUrl>
+    <Authors>ryancheung</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+</Project>
+
