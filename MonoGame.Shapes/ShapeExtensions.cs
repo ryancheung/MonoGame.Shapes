@@ -206,6 +206,12 @@ namespace MonoGame.Shapes
             // calculate the distance between the two vectors
             var distance = Vector2.Distance(point1, point2);
 
+            if (point2.Y < point1.Y)
+            {
+                point1.X -= 0.5f;
+                point2.X -= 0.5f;
+            }
+
             // calculate the angle between the two vectors
             var angle = (float)Math.Atan2(point2.Y - point1.Y, point2.X - point1.X);
 
@@ -224,7 +230,7 @@ namespace MonoGame.Shapes
         /// <param name="layerDepth">The depth of the layer of this shape</param>
         public static void DrawLine(this SpriteBatch spriteBatch, Vector2 point, float length, float angle, Color color, float thickness = 1f, int layerDepth = 0)
         {
-            var origin = new Vector2(0f, 0.5f);
+            var origin = new Vector2(0f, 0f);
             var scale = new Vector2(length, thickness);
             spriteBatch.Draw(GetOrCreateTexture(spriteBatch), point, PixelSourceRectangle, color, angle, origin, scale, SpriteEffects.None, layerDepth);
         }
