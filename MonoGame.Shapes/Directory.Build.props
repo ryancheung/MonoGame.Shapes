@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <BaseIntermediateOutputPath>obj</BaseIntermediateOutputPath>
-    <BaseOutputPath>..\Artifacts\MonoGame.Shapes</BaseOutputPath>
+    <BaseOutputPath>..\Artifacts</BaseOutputPath>
     <AssemblyName>MonoGame.Shapes</AssemblyName>
     <RootNamespace>MonoGame.Shapes</RootNamespace>
     <PackageProjectUrl>https://github.com/ryancheung/MonoGame.Shapes</PackageProjectUrl>
