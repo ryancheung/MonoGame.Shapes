@@ -12,10 +12,10 @@ namespace MonoGame.Shapes
         }
 
         public IEnumerable<Vector2> Points { get; private set; }
-        public float Left => Points.Min(p => p.X);
-        public float Top => Points.Min(p => p.Y);
-        public float Right => Points.Max(p => p.X);
-        public float Bottom => Points.Max(p => p.Y);
+        public float Left { get { return Points.Min(p => p.X); } }
+        public float Top { get { return Points.Min(p => p.Y); } }
+        public float Right { get { return Points.Max(p => p.X); } }
+        public float Bottom { get { return Points.Max(p => p.Y); } }
 
         public Rectangle BoundingRectangle
         {

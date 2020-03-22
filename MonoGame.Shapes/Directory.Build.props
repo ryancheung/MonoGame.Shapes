@@ -9,6 +9,7 @@
     <RepositoryUrl>https://github.com/ryancheung/MonoGame.Shapes</RepositoryUrl>
     <Authors>ryancheung</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <LangVersion>5</LangVersion>
   </PropertyGroup>
 
 </Project>
